@@ -57,7 +57,7 @@ const Banner = () => {
               ref={(el) => {title1 = el;}}
               className="max-w-lg mb-6 font-sans text-xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none"
             >
-              Hi! i'm fran
+              Hi! i'm fraporitmos
               <br className="hidden md:block" />I develop systems that
               <span className="relative px-1">
                 <div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400" />
