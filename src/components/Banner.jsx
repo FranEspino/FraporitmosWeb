@@ -8,7 +8,7 @@ const Banner = () => {
   let card1 = useRef(null);
   let card2 = useRef(null);
 
-  let t1 = new TimelineLite({ delay: 0.3 }); //para asegurar la carga de la animacion
+  let t1 = new TimelineLite({ delay: 0.5 }); //para asegurar la carga de la animacion
 
   useEffect(() => {
     TweenMax.to(foto, 10, { css: { visibility: 'visible' } });
@@ -49,7 +49,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className=" m-auto  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div className=" m-auto  sm:max-w-xl mt-16  md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 ">
       <div className="m-6 md:grid md:gap-5 lg:grid-cols-2 sm:flex sm:flex-col-reverse md:row-gap-8">
         <div className="flex flex-col  justify-cemter">
           <div className="max-w-xl mb-6  ">
