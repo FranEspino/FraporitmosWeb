@@ -111,14 +111,14 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="md:ml-16 sm:pt-4 sm:pb-4 ">
+        <div className="md:ml-16 ">
           <img
             ref={(el) => {
               foto = el;
             }}
             className="object-cover w-full   rounded shadow-lg "
-            src="https://avatars.githubusercontent.com/u/63974005?v=4"
-            alt=""
+            src="https://res.cloudinary.com/frapoteam/image/upload/v1620798209/frapo_kzjc4j.jpg"
+            alt="Fran Espino"
           />
         </div>
       </div>

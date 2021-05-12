@@ -14,7 +14,7 @@ export default function Header() {
               <img
               alt="Fraporitmos"
                 className="rounded-full ml-4 h-12 w-12 shadow-md  flex items-center justify-center"
-                src="https://lh3.googleusercontent.com/a-/AOh14GjKNKF1lyUkuM06QVkg56gtWBm5FwvE3bmBd2BWUQ=s600-k-no-rp-mo"
+                src="https://res.cloudinary.com/frapoteam/image/upload/v1620798492/logo_yrapli.png"
               />
             </a>
             <button
