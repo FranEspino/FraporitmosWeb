@@ -123,8 +123,6 @@ const Banner = () => {
             alt="model name"
             loading="lazy"
             auto-rotate
-            zoom="false"    
-            disable-zoom
             camera-controls
             shadow-intensity="2"
             autoplay
