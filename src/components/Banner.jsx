@@ -109,7 +109,7 @@ const Banner = () => {
                   A business big that
                 </h6>
                 <p className="text-sm text-gray-900">
-                  Those options are already baked in with hello
+                  Those options are already baked in with.
                 </p>
               </div>
             </div>
@@ -131,7 +131,7 @@ const Banner = () => {
             autoplay
           ></model-viewer>
         </div>
-      </div>
+      </div> 
     </div>
   );
 };
