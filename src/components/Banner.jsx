@@ -120,7 +120,6 @@ const Banner = () => {
           <model-viewer
             poster="https://res.cloudinary.com/frapoteam/image/upload/v1620880668/avatarss_b1m8ml.png"
             src={model}
-            camera-target="0.2m 0.5m 0.6m"
             alt="model name"
             loading="lazy"
             auto-rotate

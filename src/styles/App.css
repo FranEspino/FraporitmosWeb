@@ -3,7 +3,7 @@ model-viewer {
   height: 800px;
 }
 .model{
-  margin-left: 8em;
+  margin-left: 6em;
   margin-top: -13em;
 }
 @media (max-width: 600px) {
