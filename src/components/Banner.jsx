@@ -127,7 +127,7 @@ const Banner = () => {
             zoom="false"    
             disable-zoom
             camera-controls
-            shadow-intensity="5"
+            shadow-intensity="2"
             autoplay
           ></model-viewer>
         </div>
