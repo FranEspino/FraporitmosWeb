@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { TimelineLite, Power3 } from "gsap";
 import "@google/model-viewer";
-import model from "../assets/Frapo.glb";
+import model from "../assets/frapo.glb";
 import "../styles/App.css";
 const Banner = () => {
  // let foto = useRef(null);
@@ -118,7 +118,6 @@ const Banner = () => {
         <div className="model ">
           <model-viewer
             poster="https://res.cloudinary.com/frapoteam/image/upload/v1620880668/avatarss_b1m8ml.png"
-            id="lazy-load"
             src={model}
             camera-target="0.2m 0.5m 0.6m"
             alt="model name"
