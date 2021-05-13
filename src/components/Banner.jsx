@@ -10,7 +10,7 @@ const Banner = () => {
   let card1 = useRef(null);
   let card2 = useRef(null);
 
-  let t1 = new TimelineLite({ delay: 0.5 }); //para asegurar la carga de la animacion
+  let t1 = new TimelineLite({ delay: 0.6 }); //para asegurar la carga de la animacion
 
   useEffect(() => {
     /* TweenMax.to(foto, 10, { css: { visibility: 'visible' } });
@@ -48,7 +48,8 @@ const Banner = () => {
       { scale: 0.1, ease: Power3.easeOut },
       0.2
     );
-  }, []);
+    console.log("gelñ")
+  });
 
   return (
     <div className=" m-auto  sm:max-w-xl mt-20  md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 ">

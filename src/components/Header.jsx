@@ -74,8 +74,9 @@ export default function Header() {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="pl-8  flex items-center text-xs uppercase font-bold leading-snug text-black  hover:opacity-75">
+                <a href="#Dark Mode" className="pl-8  flex items-center text-xs uppercase font-bold leading-snug text-black  hover:opacity-75">
                   <Switch />
+                
                 </a>
               </li>
             </ul>
@@ -138,9 +139,7 @@ export default function Header() {
               <span className="ml-6">Contact</span>
             </Link>
           </li>
-          <li className="nav-item">
-            <a className="pl-8  flex items-center text-white uppercase font-bold leading-snug text-white  hover:opacity-75"></a>
-          </li>
+     
         </ul>
       </div>
     </>
