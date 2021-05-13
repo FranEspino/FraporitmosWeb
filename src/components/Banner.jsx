@@ -5,10 +5,10 @@ import model from "../assets/frapo.glb";
 import "../styles/App.css";
 const Banner = () => {
  // let foto = useRef(null);
-  let title1 = useRef(null);
-  let title2 = useRef(null);
-  let card1 = useRef(null);
-  let card2 = useRef(null);
+  let titulo1 = useRef(null);
+  let titulo2 = useRef(null);
+  let cardOne = useRef(null);
+  let cardTwo = useRef(null);
 
   let t1 = new TimelineLite({ delay: 0.6 }); //para asegurar la carga de la animacion
 
@@ -21,35 +21,35 @@ const Banner = () => {
       0.2
     );*/
 
-    t1.from(title1, 1.2, { x: -800, ease: Power3.easeOut }, "Start").from(
-      title1,
+    t1.from(titulo1, 1.2, { x: -800, ease: Power3.easeOut }, "Start").from(
+      titulo1,
       2,
       { scale: 0.8, ease: Power3.easeOut },
       0.2
     );
 
-    t1.from(title2, 0.8, { y: 800, ease: Power3.easeInOut }, "Start").from(
-      title2,
+    t1.from(titulo2, 0.8, { y: 800, ease: Power3.easeInOut }, "Start").from(
+      titulo2,
       0.6,
       { scale: 0.1, ease: Power3.easeOut },
       0.8
     );
 
-    t1.from(card2, 3, { x: -800, ease: Power3.easeInOut }, "Start").from(
-      card2,
+    t1.from(cardTwo, 3, { x: -800, ease: Power3.easeInOut }, "Start").from(
+      cardTwo,
       3,
       { scale: 0.1, ease: Power3.easeOut },
       0.15
     );
 
-    t1.from(card1, 4, { x: -1000, ease: Power3.easeInOut }, "Start").from(
-      card1,
+    t1.from(cardOne, 4, { x: -1000, ease: Power3.easeInOut }, "Start").from(
+      cardOne,
       4,
       { scale: 0.1, ease: Power3.easeOut },
       0.2
     );
     console.log("gelñ")
-  });
+  },[]);
 
   return (
     <div className=" m-auto  sm:max-w-xl mt-20  md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 ">
@@ -58,11 +58,11 @@ const Banner = () => {
           <div className="max-w-xl mb-6  ">
             <h2
               ref={(el) => {
-                title1 = el;
+                titulo1 = el;
               }}
               className="max-w-lg mb-6 font-sans text-xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none"
             >
-              Hi! I'm Fran 👋
+              Hi! I'm Fran 
               <br className="hidden md:block" />I develop systems that
               <span className="relative px-1">
                 <div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400" />
@@ -75,7 +75,7 @@ const Banner = () => {
             </h2>
             <p
               ref={(el) => {
-                title2 = el;
+                titulo2 = el;
               }}
               className="text-base text-gray-700 md:text-lg"
             >
@@ -86,7 +86,7 @@ const Banner = () => {
           <div className="grid gap-5 row-gap-8 sm:grid-cols-2">
             <div
               ref={(el) => {
-                card1 = el;
+                cardOne = el;
               }}
               className=" shadow-lg border-deep-purple"
             >
@@ -101,7 +101,7 @@ const Banner = () => {
             </div>
             <div
               ref={(el) => {
-                card2 = el;
+                cardTwo = el;
               }}
               className="  shadow-lg border-deep-purple"
             >
