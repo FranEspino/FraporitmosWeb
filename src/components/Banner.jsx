@@ -1,8 +1,10 @@
-import React, { useEffect, useRef } from 'react';
-import { TweenMax, TimelineLite, Power3 } from 'gsap';
-
+import React, { useEffect, useRef } from "react";
+import { TimelineLite, Power3 } from "gsap";
+import "@google/model-viewer";
+import model from "../assets/frapo.glb";
+import "../styles/App.css";
 const Banner = () => {
-  let foto = useRef(null);
+ // let foto = useRef(null);
   let title1 = useRef(null);
   let title2 = useRef(null);
   let card1 = useRef(null);
@@ -11,36 +13,36 @@ const Banner = () => {
   let t1 = new TimelineLite({ delay: 0.5 }); //para asegurar la carga de la animacion
 
   useEffect(() => {
-    TweenMax.to(foto, 10, { css: { visibility: 'visible' } });
+    /* TweenMax.to(foto, 10, { css: { visibility: 'visible' } });
     t1.from(foto, 1.2, { x: 800, ease: Power3.easeOut }, 'Start').from(
       foto,
       2,
       { scale: 0.8, ease: Power3.easeOut },
       0.2
-    );
+    );*/
 
-    t1.from(title1, 1.2, { x: -800, ease: Power3.easeOut }, 'Start').from(
+    t1.from(title1, 1.2, { x: -800, ease: Power3.easeOut }, "Start").from(
       title1,
       2,
       { scale: 0.8, ease: Power3.easeOut },
       0.2
     );
 
-    t1.from(title2, 0.8, { y: 800, ease: Power3.easeInOut }, 'Start').from(
+    t1.from(title2, 0.8, { y: 800, ease: Power3.easeInOut }, "Start").from(
       title2,
       0.6,
       { scale: 0.1, ease: Power3.easeOut },
       0.8
     );
 
-    t1.from(card2, 3, { x: -800, ease: Power3.easeInOut }, 'Start').from(
+    t1.from(card2, 3, { x: -800, ease: Power3.easeInOut }, "Start").from(
       card2,
       3,
       { scale: 0.1, ease: Power3.easeOut },
       0.15
     );
 
-    t1.from(card1, 4, { x: -1000, ease: Power3.easeInOut }, 'Start').from(
+    t1.from(card1, 4, { x: -1000, ease: Power3.easeInOut }, "Start").from(
       card1,
       4,
       { scale: 0.1, ease: Power3.easeOut },
@@ -49,15 +51,17 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className=" m-auto  sm:max-w-xl mt-16  md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 ">
+    <div className=" m-auto  sm:max-w-xl mt-20  md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 ">
       <div className="m-6 md:grid md:gap-5 lg:grid-cols-2 sm:flex sm:flex-col-reverse md:row-gap-8">
         <div className="flex flex-col  justify-cemter">
           <div className="max-w-xl mb-6  ">
             <h2
-              ref={(el) => {title1 = el;}}
+              ref={(el) => {
+                title1 = el;
+              }}
               className="max-w-lg mb-6 font-sans text-xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none"
             >
-              Hi! i'm fraporitmos
+              Hi! I'm Fran 👋
               <br className="hidden md:block" />I develop systems that
               <span className="relative px-1">
                 <div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400" />
@@ -111,15 +115,19 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="md:ml-16 ">
-          <img
-            ref={(el) => {
-              foto = el;
-            }}
-            className="object-cover w-full   rounded shadow-lg "
-            src="https://res.cloudinary.com/frapoteam/image/upload/v1620798209/frapo_kzjc4j.jpg"
-            alt="Fran Espino"
-          />
+        <div className="model md:ml-12 ">
+          <model-viewer
+            poster="https://i.pinimg.com/originals/e9/70/82/e97082553918298a25af33ba66e70f12.gif"
+            id="lazy-load"
+            src={model}
+            alt="model name"
+            loading="lazy"
+            auto-rotate
+            zoom="false"    
+            camera-controls
+            shadow-intensity="5"
+            autoplay
+          ></model-viewer>
         </div>
       </div>
     </div>

@@ -1,3 +1,32 @@
+model-viewer {
+  width: 500px;
+  height: 800px;
+}
+.model{
+  margin-top: -20em;
+}
+@media (max-width: 600px) {
+  model-viewer {
+    width: 400px;
+    height: 600px;
+  }
+ .model{
+  margin-top: -8em;
+}
+}
+
+#lazy-load-poster {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url("https://res.cloudinary.com/frapoteam/image/upload/v1620798209/frapo_kzjc4j.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .dark-mode {
     display: flex;
     justify-content: space-between;
